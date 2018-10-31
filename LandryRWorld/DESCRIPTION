@@ -3,9 +3,9 @@ Type: Package
 Title: Modeling an Ecosystem
 Version: 0.1.0
 Author: Stephanie Landry
-Maintainer: https://github.com/stephlandry	slandry831@gmail.com 
+Maintainer: Stephanie Landry <slandry831@gmail.com> 
 Description: Creates a model of an ecosystem that includes plants, herbivores, and carnivores on a terrain. Scenario: Snakes, which must thermoregulate across the landscape, eat small herbivores (i.e., rabbits). The plants that make up the diet of those herbivores must survive and reproduce, as do the herbivores which act as prey to the surviving and reproducing snakes across a multi-temperature terrain.
-License: GPL
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0

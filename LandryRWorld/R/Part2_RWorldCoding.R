@@ -14,8 +14,8 @@
 #' Stephanie Landry: Snakes - as carnivores
 #'
 #' To determine if your input data meets requirements of functions,
-#' you can use or manipulate the wrappers \code{setup.plants} and
-#' \code{setup.carnivore} and \code{setup.herbivore}.
+#' you can use or manipulate the wrappers setup.plants, setup.carnivore,
+#' and setup.herbivore below.
 #'
 #' @param setup.plants wrapper function that includes all impertinent information
 #' about the plant species being modeled.
@@ -28,8 +28,6 @@
 #' @param names vector with names of species used in function.
 #' @return list object of the reproductive, survival, and competition probabilities,
 #' and character names given per species.
-#' @example
-#' info<-setup.plants(repro, survive, comp.mat, names)
 #' @param plants matrix of ecosystem with species, empty cells, or NAs
 #' as columns and rows.
 #' @param timestep array of ecosystem timesteps with species, empty cells, or NAs
@@ -51,14 +49,10 @@
 #' individual was last sated.
 #' @param harvest vector of carnivore kill probability for a prey item.
 #' @return list object
-#' @example
-#' info2<-setup.carnivore(eat, repro, harvest)
 #' @param setup.herbivore wrapper function that includes all impertinent information
 #' about the herbivore species being modeled.
 #' @param kill vector of herbivore kill probability for a plant item.
 #' @return list object
-#' @example
-#' info.herb<-setup.herbivore(eat, repro, kill)
 #' @param snake.matrix matrix of ecosystem with numeric inidivuals (snakes),
 #' empty cells, or NAs as columns and rows.
 #' @param new.loc.carn function that determines the next location that the carnivore
@@ -89,7 +83,9 @@ setup.plants <- function(repro, survive, comp.mat, names=NULL){
 }
 
 ##Don't create an empty matrix in the function because it will just get thrown out and written over.
-##see example for how to run function
+
+#example for how to run function
+#info.plant<-setup.plants(repro, survive, comp.mat, names)
 
 ##Create plants matrix - example
 #plants <- matrix(sample(c(NA, ""),8^2,replace=TRUE), nrow = 8, ncol = 8)
@@ -168,7 +164,8 @@ setup.carnivore <- function(eat, repro, harvest){
   sated <- 10
   return(list(eat=eat, repro=repro, harvest=harvest, sated=sated))
 }
-#see example for how to run function
+#example for how to run function
+#info.carn<-setup.carnivore(eat, repro, harvest)
 
 #mock herbivore with sated = 5
 setup.herbivore <- function(eat, repro, kill){
@@ -181,7 +178,8 @@ setup.herbivore <- function(eat, repro, kill){
   sated <- 5
   return(list(eat=eat, repro=repro, kill=kill, sated=sated))
 }
-#see example for how to run function
+#example for how to run function
+#info.herb<-setup.herbivore(eat, repro, kill)
 
 #Matrix setup - example
 #snake.matrix <- matrix(sample(c(NA, ""),8^2,replace=TRUE), nrow = 8, ncol = 8)

@@ -87,6 +87,6 @@ Stephanie Landry: Snakes - as carnivores
 }
 \details{
 To determine if your input data meets requirements of functions,
-you can use or manipulate the wrappers \code{setup.plants} and
-\code{setup.carnivore} and \code{setup.herbivore}.
+you can use or manipulate the wrappers setup.plants, setup.carnivore,
+and setup.herbivore below.
 }

@@ -2,11 +2,6 @@
 ##Scenario: Snakes, which must thermoregulate across the landscape, eat small herbivores (i.e., rabbits).
 ## The plants that make up the diet of those herbivores must survive and reproduce, as do the herbivores
 ## which act as prey to the surviving and reproducing snakes across a multi-temperature terrain.
-##TEAM
-##Hailey Wayment: Herbivores
-##Megen Kepas: Snakes - temperature regulation and movement
-##Helen Plylar: Terrain - with a temperature variable
-##Stephanie Landry: Snakes - as carnivores
 
 #### CARNIVORE: Snake ####
 
